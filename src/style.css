@@ -1,0 +1,189 @@
+body {
+    background-image: url("/3d-black-techno-abstract-background-overlap-layer_206725-671.avif");
+    background-size: cover;
+    background-repeat: repeat;
+    
+  }
+  
+  h1 {
+    font-family:'Times New Roman', Times, serif;
+    
+    -webkit-text-fill-color:rgb(87, 77, 77) ;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+    letter-spacing: 20px;
+  }
+  
+  h2,
+  h3 {
+    color:#fff;
+    font-weight:900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .page-header {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #e4e9ed;
+  }
+  
+  .page-header > h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .nav-elements {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    text-align: center;
+  }
+  
+  .nav > li {
+    display: inline-block;
+    padding: 2rem;
+  }
+  
+  a {
+    font-size: 1.5rem;
+    font-weight: 600;
+   border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color:rgb(87, 77, 77) ;
+  }
+  
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li > a:hover {
+    color: #fff;
+    background-color:rgb(87, 77, 77) ;
+    transition: all 2ms;
+  }
+  
+  .nav-pills > li.active > a:active,
+  .nav-pills > li > a:active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .form-group > button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .form-group > button:active {
+    background-color: #000;
+    color: #fff;
+    transition: all 3ms;
+  }
+  
+  #encode {
+    padding-bottom: 20px;
+  }
+  
+  p.alert,
+  .alert-info {
+    background-color:rgb(87, 77, 77) ;
+    color: #fff;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+  }
+  
+  .form > .form-group > input,
+  .form-group > textarea {
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    word-wrap: break-word;
+  }
+  
+  input[type="file"]::file-selector-button {
+    background-color:rgb(87, 77, 77) ;
+    color: #fff;
+    padding: 2px 10px;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+  }
+  
+  canvas {
+    max-width: 100%;
+  }
+  
+  div.clearfix,
+  div.message {
+    padding-bottom: 20px;
+  }
+  
+  div.decode {
+    padding-bottom: 20px;
+  }
+  
+  div.binary-decode > textarea {
+    padding: 20px;
+  }
+  
+  .hiddenDownloadButton {
+    display: none;
+  }
+  
+  #downloadButton {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 7px;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  #downloadButton:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  
+  #downloadButton:active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    body {
+      background-size: auto;
+    }
+    .page-header > h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .nav > li {
+      padding: 1.5rem;
+    }
+  
+    a {
+      font-size: 1.2rem;
+    }
+  
+    .form-group > button,
+    #downloadButton {
+      font-size: 1.2rem;
+    }
+  }
+  

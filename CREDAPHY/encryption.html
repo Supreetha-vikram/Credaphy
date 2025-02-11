@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stegenography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tilt+Prism&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+  background-image: url("Animatedbg.svg");
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+h1 {
+  font-family: "Rubik Iso", cursive;
+  font-family: "Tilt Prism", cursive;
+  -webkit-text-fill-color: #101112;
+  -webkit-text-stroke-width: 0.0001rem;
+  -webkit-text-stroke-color: #e3dede;
+  letter-spacing: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+.page-header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #363f47;
+}
+.page-header > h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.form-group > button {
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 1px dotted #0466c8;
+  color: #fff;
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #28a1c5;
+  padding: 10px 16px;
+  font-size: 22px;
+  line-height: 1.3333333; 
+  border-radius: 6px;
+}
+
+.form-group > button:active {
+  background-color: #4e4444;
+  color: #fff;
+  transition: all 3ms;
+}
+#encode {
+  padding-bottom: 20px;
+}
+
+p.alert,
+.alert-info {
+  background-color: #031633;
+  color: #6ea8fe;
+  border: 1px dotted #3286da;
+  border-radius: 0.5rem;
+}
+
+.form > .form-group > input,
+.form-group > textarea {
+  border: 1.5px solid rgb(146, 133, 133);
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  word-wrap: break-word;
+}
+
+input[type="file"]::file-selector-button {
+  background-color:  #6ec1ef;
+  color: #fff;
+  padding: 2px 10px;
+  border: 1px dotted #0466c8;
+}
+.small{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+.form-group{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+</style>
+<body>
+
+    <div class="container-fluid">
+        <div class="page-header">
+          <h1>Stegenography</h1>
+        </div><br>
+
+        <div id="my-tab-content" class="container tab-content">
+            <div class="tab-pane active" id="encode">
+              <div>
+                <h2>Encode Message</h2>  
+                <p class="small">Select input image <span class="label label-info">PNG</span> <span class="label label-info">JPG</span> <span class="label label-info">GIF</span> <span class="label label-info">BMP</span></p>
+                <form class="form">
+                  <div class="form-group">
+                    <input class="form-control" type="file" name="baseFile" onchange="previewEncodeImage()" />
+                  </div><br>
+
+                  <div class="form-group" >
+                    <label>Enter Encryption Password</label>
+                    <input type="text" class="form-control message"></input>
+                  </div><br>
+
+                  <div class="form-group" >
+                    <label>Enter Text Message</label><br>
+                
+                    <textarea class="form-control message" rows="8" cols="28"></textarea>
+                  </div><br>
+
+      
+                  <div class="form-group" id="encode-button" >
+                    <button class="encode btn btn-default pull-right" onclick="encodeMessage()">
+                      Encode
+                    </button>
+                  </div>
+                </form>
+               
+                <script src="src/jquery.min.js"></script>
+                <script src="src/bootstrap.min.js"></script>
+                <script type="text/JavaScript" src="src/script1.js"></script>      
+</body>
+</html>

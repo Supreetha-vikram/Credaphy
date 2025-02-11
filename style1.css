@@ -1,0 +1,317 @@
+body {
+    background-image: url("/3d-black-techno-abstract-background-overlap-layer_206725-671.avif");
+    background-size: cover;
+    background-repeat: repeat;
+    
+  }
+  
+  h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+    -webkit-text-fill-color:rgb(87, 77, 77) ;
+    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-color: #fff;
+    letter-spacing: 9px;
+   
+  }
+  
+  h2,
+  h3 {
+    color:#fff;
+    font-weight:10000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .page-header {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #e4e9ed;
+  }
+  
+  .page-header > h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .nav-elements {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    text-align: center;
+  }
+  
+  .nav > li {
+    display: inline-block;
+    padding: 2rem;
+  }
+  
+  a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: rgb(87, 77, 77) ;
+  }
+  
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li > a:hover {
+    color: #fff;
+    background-color: rgb(49, 47, 47) ;
+    transition: all 2ms;
+  }
+  
+  .nav-pills > li.active > a:active,
+  .nav-pills > li > a:active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .form-group > button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .form-group > button:active {
+    background-color: #000;
+    color: #fff;
+    transition: all 3ms;
+  }
+  
+  #encode {
+    padding-bottom: 20px;
+  }
+  
+  p.alert,
+  .alert-info {
+    background-color:rgb(55, 52, 52) ;
+    color: #f1f3f5;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+  }
+  
+  .form > .form-group > input,
+  .form-group > textarea {
+    border: 1px dotted rgb(44, 42, 42) ;
+    border-radius: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    word-wrap: break-word;
+    
+  }
+  
+  input[type="file"]::file-selector-button {
+    background-color: rgb(87, 77, 77) ;
+    color: #fff;
+    padding: 2px 10px;
+    border: 1px dotted rgb(87, 77, 77) ;
+    border-radius: 0.5rem;
+  }
+  
+  canvas {
+    max-width: 100%;
+  }
+  
+  div.clearfix,
+  div.message {
+    padding-bottom: 20px;
+  }
+  
+  div.decode {
+    padding-bottom: 20px;
+  }
+  
+  div.binary-decode > textarea {
+    padding: 20px;
+  }
+  
+  .hiddenDownloadButton {
+    display: none;
+  }
+  
+  #downloadButton {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 7px;
+    border: 1px dotted rgb(87, 77, 77) 
+    border-radius: 0.5rem;
+    background-color:#000;
+    color:#fff;
+  }
+  
+  #downloadButton:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  
+  #downloadButton:active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 1.5rem;
+}
+
+.gallery .box-container .box{
+    position: relative;
+    border:1rem solid #333;
+    border-radius: .5rem;
+    height: 25rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box:hover img{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+.gallery .box-container .box .title{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.price .box-contain{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 1.5rem;
+}
+
+.price .box-contain .box{
+    padding: 2rem 0;
+    background: #333;
+    border-radius: .5rem;
+    text-align: center;
+ 
+}
+
+.price .box-contain .box:hover{
+    transform: scale(1.1);
+}
+
+
+.price .box-contain .box .title{
+    background: var(--main-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-contain .box .amount{
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+.price .box-contain .box ul{
+    list-style-type: none;
+    padding: 1rem 0;
+
+}
+
+.price .box-contain .box ul li{
+   font-size: 1.5rem;
+   color: #eee;
+   padding: 1rem 0;
+}
+
+.price .box-contain .box ul li i{
+    color: var(--main-color);
+    padding-right: 3rem;
+}
+
+
+.footer{
+    background: #111;
+}
+
+.box-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 1.5rem;
+}
+
+.box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+ .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+
+.box-container {
+    text-align: center;
+    border-top: 1rem solid #222;
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    body {
+      background-size: auto;
+    }
+    .page-header > h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .nav > li {
+      padding: 1.5rem;
+    }
+  
+    a {
+      font-size: 1.2rem;
+    }
+  
+    .form-group > button,
+    #downloadButton {
+      font-size: 1.2rem;
+    }
+  }
+
+
+  
+  
